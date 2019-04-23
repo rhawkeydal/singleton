@@ -7,8 +7,8 @@ Sample code for singleton lecture
 
 2. Create a branch to make your change:
 
-   git branch <lastname>_attempt
-   git checkout <lastname>_attempt
+   git branch yourlastname_attempt
+   git checkout yourlastname_attempt
 
 3. Turn the DeckOfCards class into a singleton.
 
@@ -16,7 +16,7 @@ Sample code for singleton lecture
 
    git add -A
    git commit -m "My attempt at the Singleton!"
-   git push origin <lastname>_attempt
+   git push origin yourlastname_attempt
 
 5. Submit a pull request from your branch to master here:
 
