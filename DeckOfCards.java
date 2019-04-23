@@ -4,9 +4,21 @@ import java.util.*;
 
 public class DeckOfCards
 {
+	private static DeckOfCards uniqueInstance = null;
+	
 	private ArrayList<Card> deck;
+	
+	public static DeckOfCards instance()
+	{
+		if (null == uniqueInstance)
+		{
+			uniqueInstance = new DeckOfCards();
+			uniqueInstance.loadDeck();
+		}
+		return uniqueInstance;
+	}
 
-	public DeckOfCards()
+	private DeckOfCards()
 	{
 		deck = new ArrayList<Card>();
 	}
